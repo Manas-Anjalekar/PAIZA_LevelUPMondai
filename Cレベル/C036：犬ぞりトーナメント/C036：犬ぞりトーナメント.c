@@ -11,21 +11,21 @@ int main(void){
   for(int i = 1; i <= 4; i++){
     scanf("%d", &e[i]);
   }
-  for(int j = 1; j <= 4; j++){
-    int k = 1;
-    while(k != 5){
-      if(j == p1 && k == p2){
+  for(int j = 0; j < 4; j++){
+    int k = 0;
+    while(k != 4){
+      if(j + 1 == p1 && k + 1 == p2){
         if(e[j] < e[k]){
-          junYuSho1 = j;
+          junYuSho1 = j + 1;
         }else if(e[k] < e[j]){
-          junYuSho1 = k;
+          junYuSho1 = k + 1;
         }
       }
-      if(j == p3 && k == p4){
+      if(j + 1 == p3 && k + 1 == p4){
         if(e[j] < e[k]){
-          junYuSho2 = j;
+          junYuSho2 = j + 1;
         }else if(e[k] < e[j]){
-          junYuSho2 = k;
+          junYuSho2 = k + 1;
         }
       }
       k++;
