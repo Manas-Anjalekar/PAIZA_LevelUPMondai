@@ -1,3 +1,4 @@
+@ -1,33 +0,0 @@
 #include<stdio.h>
 #include<string.h>
 int main(void){
